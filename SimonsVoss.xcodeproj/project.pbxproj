@@ -32,6 +32,9 @@
 		8B3BDC44287B764300F79E33 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC43287B764300F79E33 /* UITableView+Extensions.swift */; };
 		8B3BDC47287B780000F79E33 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC46287B780000F79E33 /* UIAlertController.swift */; };
 		8B3BDC49287B798D00F79E33 /* LockListRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC48287B798D00F79E33 /* LockListRefreshViewController.swift */; };
+		8B3BDC4B287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC4A287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift */; };
+		8B3BDC4D287B7A9700F79E33 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */; };
+		8B3BDC50287B7ACA00F79E33 /* LockListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC4F287B7ACA00F79E33 /* LockListViewControllerTests.swift */; };
 		8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F6287B598B0029A311 /* AppDelegate.swift */; };
 		8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F8287B598B0029A311 /* SceneDelegate.swift */; };
 		8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FF287B598E0029A311 /* Assets.xcassets */; };
@@ -74,6 +77,9 @@
 		8B3BDC43287B764300F79E33 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		8B3BDC46287B780000F79E33 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		8B3BDC48287B798D00F79E33 /* LockListRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockListRefreshViewController.swift; sourceTree = "<group>"; };
+		8B3BDC4A287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		8B3BDC4F287B7ACA00F79E33 /* LockListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockListViewControllerTests.swift; sourceTree = "<group>"; };
 		8BEB63F3287B598B0029A311 /* SimonsVoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonsVoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB63F6287B598B0029A311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEB63F8287B598B0029A311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -261,6 +267,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8B3BDC4E287B7AB900F79E33 /* LockListViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC4A287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift */,
+				8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */,
+				8B3BDC4F287B7ACA00F79E33 /* LockListViewControllerTests.swift */,
+			);
+			path = LockListViewControllerTests;
+			sourceTree = "<group>";
+		};
 		8BEB63EA287B598A0029A311 = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +311,7 @@
 			children = (
 				8B3BDC25287B689700F79E33 /* ListAPITests */,
 				8B3BDC28287B692000F79E33 /* LockListAPIEndToEndTests */,
+				8B3BDC4E287B7AB900F79E33 /* LockListViewControllerTests */,
 			);
 			path = SimonsVossTests;
 			sourceTree = "<group>";
@@ -427,11 +444,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3BDC4D287B7A9700F79E33 /* UIControl+TestHelpers.swift in Sources */,
 				8B3BDC1F287B667300F79E33 /* SharedTestHelpers.swift in Sources */,
 				8B3BDC24287B682100F79E33 /* URLSessionHTTPClientTests.swift in Sources */,
 				8B3BDC17287B612400F79E33 /* HTTPClientSpy.swift in Sources */,
 				8B3BDC19287B619F00F79E33 /* URLProtocolStub.swift in Sources */,
+				8B3BDC50287B7ACA00F79E33 /* LockListViewControllerTests.swift in Sources */,
 				8B3BDC27287B68F300F79E33 /* LockListAPIEndToEndTests.swift in Sources */,
+				8B3BDC4B287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				8B3BDC1D287B65F800F79E33 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				8B3BDC22287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 			);
