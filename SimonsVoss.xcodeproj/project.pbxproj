@@ -130,6 +130,18 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8B3BDC25287B689700F79E33 /* List API Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC20287B668C00F79E33 /* Helpers */,
+				8B3BDC16287B612400F79E33 /* HTTPClientSpy.swift */,
+				8B3BDC18287B619F00F79E33 /* URLProtocolStub.swift */,
+				8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */,
+				8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */,
+			);
+			path = "List API Tests";
+			sourceTree = "<group>";
+		};
 		8BEB63EA287B598A0029A311 = {
 			isa = PBXGroup;
 			children = (
@@ -166,11 +178,7 @@
 		8BEB640C287B598E0029A311 /* SimonsVossTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B3BDC20287B668C00F79E33 /* Helpers */,
-				8B3BDC16287B612400F79E33 /* HTTPClientSpy.swift */,
-				8B3BDC18287B619F00F79E33 /* URLProtocolStub.swift */,
-				8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */,
-				8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */,
+				8B3BDC25287B689700F79E33 /* List API Tests */,
 			);
 			path = SimonsVossTests;
 			sourceTree = "<group>";
