@@ -195,6 +195,24 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		8B3BDC35287B6B7700F79E33 /* LocksList */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC15287B607700F79E33 /* Data */,
+				8B3BDC0F287B5F7900F79E33 /* Domain */,
+				8B3BDC34287B6AE000F79E33 /* Presenter */,
+			);
+			path = LocksList;
+			sourceTree = "<group>";
+		};
+		8B3BDC36287B6B8100F79E33 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC35287B6B7700F79E33 /* LocksList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		8BEB63EA287B598A0029A311 = {
 			isa = PBXGroup;
 			children = (
@@ -217,9 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				8B3BDC09287B5DD900F79E33 /* Shared */,
-				8B3BDC0F287B5F7900F79E33 /* Domain */,
-				8B3BDC15287B607700F79E33 /* Data */,
-				8B3BDC34287B6AE000F79E33 /* Presenter */,
+				8B3BDC36287B6B8100F79E33 /* Features */,
 				8BEB63F6287B598B0029A311 /* AppDelegate.swift */,
 				8BEB63F8287B598B0029A311 /* SceneDelegate.swift */,
 				8BEB63FF287B598E0029A311 /* Assets.xcassets */,
