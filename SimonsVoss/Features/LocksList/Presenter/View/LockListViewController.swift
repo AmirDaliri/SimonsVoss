@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LockListViewController: UIViewController {
+public class LockListViewController: UIViewController {
 
     private let viewModel: LockListViewModel
 
@@ -21,7 +21,8 @@ class LockListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
+    // MARK: - Lifecycle Methods
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
