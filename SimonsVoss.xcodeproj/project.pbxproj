@@ -36,6 +36,7 @@
 		8B3BDC4D287B7A9700F79E33 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */; };
 		8B3BDC50287B7ACA00F79E33 /* LockListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC4F287B7ACA00F79E33 /* LockListViewControllerTests.swift */; };
 		8B3BDC52287B7B5400F79E33 /* LockListViewControllerTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC51287B7B5400F79E33 /* LockListViewControllerTests+LoaderSpy.swift */; };
+		8B3BDC54287B7B9B00F79E33 /* LockListViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC53287B7B9B00F79E33 /* LockListViewController+TestHelpers.swift */; };
 		8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F6287B598B0029A311 /* AppDelegate.swift */; };
 		8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F8287B598B0029A311 /* SceneDelegate.swift */; };
 		8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FF287B598E0029A311 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		8B3BDC4F287B7ACA00F79E33 /* LockListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockListViewControllerTests.swift; sourceTree = "<group>"; };
 		8B3BDC51287B7B5400F79E33 /* LockListViewControllerTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LockListViewControllerTests+LoaderSpy.swift"; sourceTree = "<group>"; };
+		8B3BDC53287B7B9B00F79E33 /* LockListViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LockListViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		8BEB63F3287B598B0029A311 /* SimonsVoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonsVoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB63F6287B598B0029A311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEB63F8287B598B0029A311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -272,12 +274,21 @@
 		8B3BDC4E287B7AB900F79E33 /* LockListViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B3BDC4A287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift */,
-				8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */,
-				8B3BDC51287B7B5400F79E33 /* LockListViewControllerTests+LoaderSpy.swift */,
+				8B3BDC55287B7BA400F79E33 /* Helpers */,
 				8B3BDC4F287B7ACA00F79E33 /* LockListViewControllerTests.swift */,
 			);
 			path = LockListViewControllerTests;
+			sourceTree = "<group>";
+		};
+		8B3BDC55287B7BA400F79E33 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC4A287B7A7B00F79E33 /* UIRefreshControl+TestHelpers.swift */,
+				8B3BDC4C287B7A9700F79E33 /* UIControl+TestHelpers.swift */,
+				8B3BDC51287B7B5400F79E33 /* LockListViewControllerTests+LoaderSpy.swift */,
+				8B3BDC53287B7B9B00F79E33 /* LockListViewController+TestHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8BEB63EA287B598A0029A311 = {
@@ -448,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3BDC4D287B7A9700F79E33 /* UIControl+TestHelpers.swift in Sources */,
+				8B3BDC54287B7B9B00F79E33 /* LockListViewController+TestHelpers.swift in Sources */,
 				8B3BDC1F287B667300F79E33 /* SharedTestHelpers.swift in Sources */,
 				8B3BDC24287B682100F79E33 /* URLSessionHTTPClientTests.swift in Sources */,
 				8B3BDC17287B612400F79E33 /* HTTPClientSpy.swift in Sources */,
