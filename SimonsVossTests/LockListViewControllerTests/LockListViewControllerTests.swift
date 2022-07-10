@@ -6,30 +6,47 @@
 //
 
 import XCTest
+@testable import SimonsVoss
 
 class LockListViewControllerTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_loadItemsActions_requestItemsFromLoader() {
+        let (sut, loader) = makeSUT()
+        XCTAssertEqual(loader.loadItemsCallCount, 0, "Expected no loading requests before view is loaded")
+        
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(loader.loadItemsCallCount, 1, "Expected a loading request once view is loaded")
+        
+        sut.simulateUserInitiatedListReload()
+        XCTAssertEqual(loader.loadItemsCallCount, 2, "Expected another loading request once user initiates a reload")
+        
+        sut.simulateUserInitiatedListReload()
+        XCTAssertEqual(loader.loadItemsCallCount, 3, "Expected yet another loading request once user initiates another reload")
     }
+    
+    func test_loadingFeedIndicator_isVisibleWhileLoadingFeed() {
+        let (sut, loader) = makeSUT()
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut.loadViewIfNeeded()
+        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once view is loaded")
+
+        loader.completeItemsLoading(at: 0)
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading completes successfully")
+
+        sut.simulateUserInitiatedListReload()
+        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once user initiates a reload")
+
+        loader.completeItemsLoadingWithError(at: 1)
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once user initiated loading completes with error")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    // MARK: - Helpers
+    
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: LockListViewController, loader: LoaderSpy) {
+        let loader = LoaderSpy()
+        let sut = LockListUIComposer.composedWith(loader: loader)
+        trackForMemoryLeaks(loader, file: file, line: line)
+        trackForMemoryLeaks(sut, file: file, line: line)
+        return (sut, loader)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
