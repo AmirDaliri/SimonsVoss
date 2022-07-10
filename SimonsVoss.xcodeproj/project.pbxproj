@@ -21,6 +21,10 @@
 		8B3BDC22287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		8B3BDC24287B682100F79E33 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */; };
 		8B3BDC27287B68F300F79E33 /* LockListAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC26287B68F300F79E33 /* LockListAPIEndToEndTests.swift */; };
+		8B3BDC2B287B6A1700F79E33 /* LockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC29287B6A1700F79E33 /* LockListViewController.swift */; };
+		8B3BDC2C287B6A1700F79E33 /* LockListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3BDC2A287B6A1700F79E33 /* LockListViewController.xib */; };
+		8B3BDC2E287B6A2B00F79E33 /* LockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC2D287B6A2B00F79E33 /* LockListViewModel.swift */; };
+		8B3BDC30287B6A7F00F79E33 /* LockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC2F287B6A7F00F79E33 /* LockItem.swift */; };
 		8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F6287B598B0029A311 /* AppDelegate.swift */; };
 		8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F8287B598B0029A311 /* SceneDelegate.swift */; };
 		8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FF287B598E0029A311 /* Assets.xcassets */; };
@@ -52,6 +56,10 @@
 		8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		8B3BDC26287B68F300F79E33 /* LockListAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockListAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		8B3BDC29287B6A1700F79E33 /* LockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockListViewController.swift; sourceTree = "<group>"; };
+		8B3BDC2A287B6A1700F79E33 /* LockListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockListViewController.xib; sourceTree = "<group>"; };
+		8B3BDC2D287B6A2B00F79E33 /* LockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockListViewModel.swift; sourceTree = "<group>"; };
+		8B3BDC2F287B6A7F00F79E33 /* LockItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockItem.swift; sourceTree = "<group>"; };
 		8BEB63F3287B598B0029A311 /* SimonsVoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonsVoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB63F6287B598B0029A311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEB63F8287B598B0029A311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +160,41 @@
 			path = LockListAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
+		8B3BDC31287B6ABF00F79E33 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC2D287B6A2B00F79E33 /* LockListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B3BDC32287B6AC900F79E33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC2F287B6A7F00F79E33 /* LockItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B3BDC33287B6AD100F79E33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC29287B6A1700F79E33 /* LockListViewController.swift */,
+				8B3BDC2A287B6A1700F79E33 /* LockListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B3BDC34287B6AE000F79E33 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC32287B6AC900F79E33 /* Model */,
+				8B3BDC31287B6ABF00F79E33 /* ViewModel */,
+				8B3BDC33287B6AD100F79E33 /* View */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		8BEB63EA287B598A0029A311 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +219,7 @@
 				8B3BDC09287B5DD900F79E33 /* Shared */,
 				8B3BDC0F287B5F7900F79E33 /* Domain */,
 				8B3BDC15287B607700F79E33 /* Data */,
+				8B3BDC34287B6AE000F79E33 /* Presenter */,
 				8BEB63F6287B598B0029A311 /* AppDelegate.swift */,
 				8BEB63F8287B598B0029A311 /* SceneDelegate.swift */,
 				8BEB63FF287B598E0029A311 /* Assets.xcassets */,
@@ -277,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEB6403287B598E0029A311 /* LaunchScreen.storyboard in Resources */,
+				8B3BDC2C287B6A1700F79E33 /* LockListViewController.xib in Resources */,
 				8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */,
+				8B3BDC2B287B6A1700F79E33 /* LockListViewController.swift in Sources */,
 				8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */,
 				8B3BDC0D287B5F4600F79E33 /* DataLoader.swift in Sources */,
 				8B3BDC0B287B5E1700F79E33 /* SvLsmData.swift in Sources */,
@@ -303,6 +349,8 @@
 				8B3BDC08287B5DB400F79E33 /* SVEndPoints.swift in Sources */,
 				8B3BDC11287B602400F79E33 /* RemoteDataLoader.swift in Sources */,
 				8B3BDC13287B603B00F79E33 /* LockItemsMapper.swift in Sources */,
+				8B3BDC30287B6A7F00F79E33 /* LockItem.swift in Sources */,
+				8B3BDC2E287B6A2B00F79E33 /* LockListViewModel.swift in Sources */,
 				8B3BDC06287B5D5600F79E33 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
