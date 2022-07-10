@@ -132,7 +132,7 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		8B3BDC25287B689700F79E33 /* List API Tests */ = {
+		8B3BDC25287B689700F79E33 /* ListAPITests */ = {
 			isa = PBXGroup;
 			children = (
 				8B3BDC20287B668C00F79E33 /* Helpers */,
@@ -141,7 +141,7 @@
 				8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */,
 			);
-			path = "List API Tests";
+			path = ListAPITests;
 			sourceTree = "<group>";
 		};
 		8B3BDC28287B692000F79E33 /* LockListAPIEndToEndTests */ = {
@@ -188,7 +188,7 @@
 		8BEB640C287B598E0029A311 /* SimonsVossTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B3BDC25287B689700F79E33 /* List API Tests */,
+				8B3BDC25287B689700F79E33 /* ListAPITests */,
 				8B3BDC28287B692000F79E33 /* LockListAPIEndToEndTests */,
 			);
 			path = SimonsVossTests;
