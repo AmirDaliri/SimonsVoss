@@ -21,3 +21,23 @@ class LockItemTableViewCell: UITableViewCell {
         selectionStyle = .none
     }
 }
+
+// MARK: - Helpers
+private extension LockItemTableViewCell {
+    
+    private func boldedString(with baseString: String, searchString: String, fontSize: CGFloat) -> NSAttributedString? {
+      guard let regex = try? NSRegularExpression(pattern: searchString, options: .caseInsensitive) else {
+          return nil
+      }
+
+      let attributedString = NSMutableAttributedString(string: baseString)
+      let boldFont = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+      regex
+        .matches(in: baseString, options: .withTransparentBounds,
+                 range: NSRange(location: 0, length: baseString.utf16.count))
+        .forEach {
+          attributedString.addAttributes([.font: boldFont], range: $0.range)
+      }
+      return attributedString
+    }
+}
