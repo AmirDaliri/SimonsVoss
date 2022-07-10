@@ -228,6 +228,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		8B3BDC3E287B726900F79E33 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8BEB63FF287B598E0029A311 /* Assets.xcassets */,
+				8BEB6401287B598E0029A311 /* LaunchScreen.storyboard */,
+				8BEB6404287B598E0029A311 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		8BEB63EA287B598A0029A311 = {
 			isa = PBXGroup;
 			children = (
@@ -252,9 +262,7 @@
 				8B3BDC09287B5DD900F79E33 /* Shared */,
 				8B3BDC36287B6B8100F79E33 /* Features */,
 				8B3BDC3D287B71F400F79E33 /* App */,
-				8BEB63FF287B598E0029A311 /* Assets.xcassets */,
-				8BEB6401287B598E0029A311 /* LaunchScreen.storyboard */,
-				8BEB6404287B598E0029A311 /* Info.plist */,
+				8B3BDC3E287B726900F79E33 /* Resource */,
 			);
 			path = SimonsVoss;
 			sourceTree = "<group>";
@@ -548,7 +556,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NCU4JG2P77;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimonsVoss/Info.plist;
+				INFOPLIST_FILE = SimonsVoss/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -575,7 +583,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NCU4JG2P77;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimonsVoss/Info.plist;
+				INFOPLIST_FILE = SimonsVoss/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
