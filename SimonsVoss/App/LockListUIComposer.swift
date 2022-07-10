@@ -12,7 +12,8 @@ public final class LockListUIComposer {
     
     public static func composedWith(loader: DataLoader) -> LockListViewController {
         let viewModel = LockListViewModel(loader: loader)
-        let vc = LockListViewController(viewModel: viewModel)
+        let refreshController = LockListRefreshViewController(viewModel: viewModel)
+        let vc = LockListViewController(viewModel: viewModel, refreshController: refreshController)
         return vc
     }
 }

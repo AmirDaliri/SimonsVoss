@@ -10,6 +10,7 @@ import Combine
 
 public class LockListViewController: UIViewController {
     private let viewModel: LockListViewModel
+    private var refreshController: LockListRefreshViewController?
 
     // MARK: - @IBOutlet
     @IBOutlet weak var tableView: UITableView!
@@ -19,8 +20,9 @@ public class LockListViewController: UIViewController {
     private var cancellable = Set<AnyCancellable>()
 
     // MARK: - Initializer
-    public init(viewModel: LockListViewModel) {
+    public init(viewModel: LockListViewModel, refreshController: LockListRefreshViewController) {
         self.viewModel = viewModel
+        self.refreshController = refreshController
         super.init(nibName: "LockListViewController", bundle: nil)
     }
     
@@ -37,13 +39,14 @@ public class LockListViewController: UIViewController {
         viewModel.onItemsLoad = { [weak self] in
             self?.tableView.reloadData()
         }
-        viewModel.loadItems()
         errorHandler()
     }
 
     private func setupUI() {
         tableView.register(LockItemTableViewCell.self)
         tableView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:))))
+        tableView.refreshControl = refreshController?.view
+        refreshController?.refresh()
     }
     
     private func setupSearchBar() {
