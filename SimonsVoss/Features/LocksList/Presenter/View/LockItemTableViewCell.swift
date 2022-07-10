@@ -20,6 +20,44 @@ class LockItemTableViewCell: UITableViewCell {
         super.awakeFromNib()
         selectionStyle = .none
     }
+    
+    // MARK: - Setup View
+    func setText(lockItem: LockItem, searchString: String) {
+        if let boldedAddress = boldedString(with: lockItem.name,
+                                            searchString: searchString,
+                                            fontSize: lockNameLabel.font.pointSize) {
+            lockNameLabel.attributedText = boldedAddress
+        } else {
+            lockNameLabel.text = lockItem.name
+        }
+        
+        
+        if let boldedAddress = boldedString(with: lockItem.buildingShortcut,
+                                            searchString: searchString,
+                                            fontSize: lockNameLabel.font.pointSize) {
+            buildingShortCutLabel.attributedText = boldedAddress
+        } else {
+            buildingShortCutLabel.text = lockItem.buildingShortcut
+        }
+
+        
+        if let boldedAddress = boldedString(with: lockItem.floor,
+                                            searchString: searchString,
+                                            fontSize: lockNameLabel.font.pointSize) {
+            floorLabel.attributedText = boldedAddress
+        } else {
+            floorLabel.text = lockItem.floor
+        }
+
+        
+        if let boldedAddress = boldedString(with: lockItem.roomNo,
+                                            searchString: searchString,
+                                            fontSize: lockNameLabel.font.pointSize) {
+            roomNumberLabel.attributedText = boldedAddress
+        } else {
+            roomNumberLabel.text = lockItem.roomNo
+        }
+    }
 }
 
 // MARK: - Helpers
