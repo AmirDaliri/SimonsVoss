@@ -57,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B3BDC09287B5DD900F79E33 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BDC03287B5D1100F79E33 /* HTTPClient.swift */,
+				8B3BDC05287B5D5600F79E33 /* URLSessionHTTPClient.swift */,
+				8B3BDC07287B5DB400F79E33 /* SVEndPoints.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		8BEB63EA287B598A0029A311 = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +88,12 @@
 		8BEB63F5287B598B0029A311 /* SimonsVoss */ = {
 			isa = PBXGroup;
 			children = (
+				8B3BDC09287B5DD900F79E33 /* Shared */,
 				8BEB63F6287B598B0029A311 /* AppDelegate.swift */,
 				8BEB63F8287B598B0029A311 /* SceneDelegate.swift */,
 				8BEB63FF287B598E0029A311 /* Assets.xcassets */,
 				8BEB6401287B598E0029A311 /* LaunchScreen.storyboard */,
 				8BEB6404287B598E0029A311 /* Info.plist */,
-				8B3BDC03287B5D1100F79E33 /* HTTPClient.swift */,
-				8B3BDC05287B5D5600F79E33 /* URLSessionHTTPClient.swift */,
-				8B3BDC07287B5DB400F79E33 /* SVEndPoints.swift */,
 			);
 			path = SimonsVoss;
 			sourceTree = "<group>";
