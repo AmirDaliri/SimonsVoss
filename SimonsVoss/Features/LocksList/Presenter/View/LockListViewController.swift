@@ -9,6 +9,8 @@ import UIKit
 
 public class LockListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
     private let viewModel: LockListViewModel
 
     // MARK: - Initializer
@@ -28,4 +30,20 @@ public class LockListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+}
+
+// MARK: - UITableViewDataSource
+extension LockListViewController: UITableViewDataSource {
+    
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
