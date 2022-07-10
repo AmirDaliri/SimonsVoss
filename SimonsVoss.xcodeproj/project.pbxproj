@@ -9,24 +9,12 @@
 /* Begin PBXBuildFile section */
 		8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F6287B598B0029A311 /* AppDelegate.swift */; };
 		8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F8287B598B0029A311 /* SceneDelegate.swift */; };
-		8BEB63FB287B598B0029A311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63FA287B598B0029A311 /* ViewController.swift */; };
-		8BEB63FE287B598B0029A311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FC287B598B0029A311 /* Main.storyboard */; };
 		8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FF287B598E0029A311 /* Assets.xcassets */; };
 		8BEB6403287B598E0029A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB6401287B598E0029A311 /* LaunchScreen.storyboard */; };
-		8BEB640E287B598E0029A311 /* SimonsVossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB640D287B598E0029A311 /* SimonsVossTests.swift */; };
-		8BEB6418287B598E0029A311 /* SimonsVossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB6417287B598E0029A311 /* SimonsVossUITests.swift */; };
-		8BEB641A287B598E0029A311 /* SimonsVossUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB6419287B598E0029A311 /* SimonsVossUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8BEB640A287B598E0029A311 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BEB63EB287B598A0029A311 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BEB63F2287B598B0029A311;
-			remoteInfo = SimonsVoss;
-		};
-		8BEB6414287B598E0029A311 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BEB63EB287B598A0029A311 /* Project object */;
 			proxyType = 1;
@@ -39,16 +27,10 @@
 		8BEB63F3287B598B0029A311 /* SimonsVoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonsVoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB63F6287B598B0029A311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEB63F8287B598B0029A311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BEB63FA287B598B0029A311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BEB63FD287B598B0029A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BEB63FF287B598E0029A311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BEB6402287B598E0029A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BEB6404287B598E0029A311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BEB6409287B598E0029A311 /* SimonsVossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonsVossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BEB640D287B598E0029A311 /* SimonsVossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonsVossTests.swift; sourceTree = "<group>"; };
-		8BEB6413287B598E0029A311 /* SimonsVossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonsVossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BEB6417287B598E0029A311 /* SimonsVossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonsVossUITests.swift; sourceTree = "<group>"; };
-		8BEB6419287B598E0029A311 /* SimonsVossUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonsVossUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +48,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BEB6410287B598E0029A311 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +56,6 @@
 			children = (
 				8BEB63F5287B598B0029A311 /* SimonsVoss */,
 				8BEB640C287B598E0029A311 /* SimonsVossTests */,
-				8BEB6416287B598E0029A311 /* SimonsVossUITests */,
 				8BEB63F4287B598B0029A311 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +65,6 @@
 			children = (
 				8BEB63F3287B598B0029A311 /* SimonsVoss.app */,
 				8BEB6409287B598E0029A311 /* SimonsVossTests.xctest */,
-				8BEB6413287B598E0029A311 /* SimonsVossUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +74,6 @@
 			children = (
 				8BEB63F6287B598B0029A311 /* AppDelegate.swift */,
 				8BEB63F8287B598B0029A311 /* SceneDelegate.swift */,
-				8BEB63FA287B598B0029A311 /* ViewController.swift */,
-				8BEB63FC287B598B0029A311 /* Main.storyboard */,
 				8BEB63FF287B598E0029A311 /* Assets.xcassets */,
 				8BEB6401287B598E0029A311 /* LaunchScreen.storyboard */,
 				8BEB6404287B598E0029A311 /* Info.plist */,
@@ -113,18 +84,8 @@
 		8BEB640C287B598E0029A311 /* SimonsVossTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BEB640D287B598E0029A311 /* SimonsVossTests.swift */,
 			);
 			path = SimonsVossTests;
-			sourceTree = "<group>";
-		};
-		8BEB6416287B598E0029A311 /* SimonsVossUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8BEB6417287B598E0029A311 /* SimonsVossUITests.swift */,
-				8BEB6419287B598E0029A311 /* SimonsVossUITestsLaunchTests.swift */,
-			);
-			path = SimonsVossUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +126,6 @@
 			productReference = 8BEB6409287B598E0029A311 /* SimonsVossTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8BEB6412287B598E0029A311 /* SimonsVossUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BEB6423287B598E0029A311 /* Build configuration list for PBXNativeTarget "SimonsVossUITests" */;
-			buildPhases = (
-				8BEB640F287B598E0029A311 /* Sources */,
-				8BEB6410287B598E0029A311 /* Frameworks */,
-				8BEB6411287B598E0029A311 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8BEB6415287B598E0029A311 /* PBXTargetDependency */,
-			);
-			name = SimonsVossUITests;
-			productName = SimonsVossUITests;
-			productReference = 8BEB6413287B598E0029A311 /* SimonsVossUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +140,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					8BEB6408287B598E0029A311 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 8BEB63F2287B598B0029A311;
-					};
-					8BEB6412287B598E0029A311 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 8BEB63F2287B598B0029A311;
 					};
@@ -221,7 +160,6 @@
 			targets = (
 				8BEB63F2287B598B0029A311 /* SimonsVoss */,
 				8BEB6408287B598E0029A311 /* SimonsVossTests */,
-				8BEB6412287B598E0029A311 /* SimonsVossUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +171,10 @@
 			files = (
 				8BEB6403287B598E0029A311 /* LaunchScreen.storyboard in Resources */,
 				8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */,
-				8BEB63FE287B598B0029A311 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8BEB6407287B598E0029A311 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB6411287B598E0029A311 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEB63FB287B598B0029A311 /* ViewController.swift in Sources */,
 				8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */,
 				8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,16 +197,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEB640E287B598E0029A311 /* SimonsVossTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB640F287B598E0029A311 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BEB641A287B598E0029A311 /* SimonsVossUITestsLaunchTests.swift in Sources */,
-				8BEB6418287B598E0029A311 /* SimonsVossUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +208,9 @@
 			target = 8BEB63F2287B598B0029A311 /* SimonsVoss */;
 			targetProxy = 8BEB640A287B598E0029A311 /* PBXContainerItemProxy */;
 		};
-		8BEB6415287B598E0029A311 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8BEB63F2287B598B0029A311 /* SimonsVoss */;
-			targetProxy = 8BEB6414287B598E0029A311 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BEB63FC287B598B0029A311 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BEB63FD287B598B0029A311 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8BEB6401287B598E0029A311 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +350,6 @@
 				INFOPLIST_FILE = SimonsVoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +377,6 @@
 				INFOPLIST_FILE = SimonsVoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,42 +432,6 @@
 			};
 			name = Release;
 		};
-		8BEB6424287B598E0029A311 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NCU4JG2P77;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simonsvoss.test.SimonsVossUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimonsVoss;
-			};
-			name = Debug;
-		};
-		8BEB6425287B598E0029A311 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NCU4JG2P77;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simonsvoss.test.SimonsVossUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimonsVoss;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,15 +458,6 @@
 			buildConfigurations = (
 				8BEB6421287B598E0029A311 /* Debug */,
 				8BEB6422287B598E0029A311 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8BEB6423287B598E0029A311 /* Build configuration list for PBXNativeTarget "SimonsVossUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BEB6424287B598E0029A311 /* Debug */,
-				8BEB6425287B598E0029A311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
