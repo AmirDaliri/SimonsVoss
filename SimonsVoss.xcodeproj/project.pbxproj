@@ -19,6 +19,7 @@
 		8B3BDC1D287B65F800F79E33 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC1C287B65F800F79E33 /* XCTestCase+MemoryLeakTracking.swift */; };
 		8B3BDC1F287B667300F79E33 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC1E287B667300F79E33 /* SharedTestHelpers.swift */; };
 		8B3BDC22287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */; };
+		8B3BDC24287B682100F79E33 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */; };
 		8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F6287B598B0029A311 /* AppDelegate.swift */; };
 		8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F8287B598B0029A311 /* SceneDelegate.swift */; };
 		8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FF287B598E0029A311 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		8B3BDC1C287B65F800F79E33 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		8B3BDC1E287B667300F79E33 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		8BEB63F3287B598B0029A311 /* SimonsVoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonsVoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB63F6287B598B0029A311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEB63F8287B598B0029A311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				8B3BDC16287B612400F79E33 /* HTTPClientSpy.swift */,
 				8B3BDC18287B619F00F79E33 /* URLProtocolStub.swift */,
 				8B3BDC21287B670200F79E33 /* LoadFeedFromRemoteUseCaseTests.swift */,
+				8B3BDC23287B682100F79E33 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = SimonsVossTests;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3BDC1F287B667300F79E33 /* SharedTestHelpers.swift in Sources */,
+				8B3BDC24287B682100F79E33 /* URLSessionHTTPClientTests.swift in Sources */,
 				8B3BDC17287B612400F79E33 /* HTTPClientSpy.swift in Sources */,
 				8B3BDC19287B619F00F79E33 /* URLProtocolStub.swift in Sources */,
 				8B3BDC1D287B65F800F79E33 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
