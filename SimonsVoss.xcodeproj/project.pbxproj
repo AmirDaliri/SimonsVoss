@@ -14,6 +14,7 @@
 		8B3BDC0D287B5F4600F79E33 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC0C287B5F4600F79E33 /* DataLoader.swift */; };
 		8B3BDC11287B602400F79E33 /* RemoteDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC10287B602400F79E33 /* RemoteDataLoader.swift */; };
 		8B3BDC13287B603B00F79E33 /* LockItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC12287B603B00F79E33 /* LockItemsMapper.swift */; };
+		8B3BDC17287B612400F79E33 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BDC16287B612400F79E33 /* HTTPClientSpy.swift */; };
 		8BEB63F7287B598B0029A311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F6287B598B0029A311 /* AppDelegate.swift */; };
 		8BEB63F9287B598B0029A311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB63F8287B598B0029A311 /* SceneDelegate.swift */; };
 		8BEB6400287B598E0029A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB63FF287B598E0029A311 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		8B3BDC0C287B5F4600F79E33 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		8B3BDC10287B602400F79E33 /* RemoteDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataLoader.swift; sourceTree = "<group>"; };
 		8B3BDC12287B603B00F79E33 /* LockItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockItemsMapper.swift; sourceTree = "<group>"; };
+		8B3BDC16287B612400F79E33 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		8BEB63F3287B598B0029A311 /* SimonsVoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonsVoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB63F6287B598B0029A311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEB63F8287B598B0029A311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		8BEB640C287B598E0029A311 /* SimonsVossTests */ = {
 			isa = PBXGroup;
 			children = (
+				8B3BDC16287B612400F79E33 /* HTTPClientSpy.swift */,
 			);
 			path = SimonsVossTests;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 					};
 					8BEB6408287B598E0029A311 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 8BEB63F2287B598B0029A311;
 					};
 				};
@@ -265,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3BDC17287B612400F79E33 /* HTTPClientSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,15 +470,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NCU4JG2P77;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonsvoss.test.SimonsVossTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimonsVoss.app/SimonsVoss";
@@ -485,11 +497,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NCU4JG2P77;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonsvoss.test.SimonsVossTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
