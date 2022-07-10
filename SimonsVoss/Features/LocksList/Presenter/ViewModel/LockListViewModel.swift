@@ -9,4 +9,9 @@ import Foundation
 
 public class LockListViewModel {
     
+    private let loader: DataLoader
+
+    public init(loader: DataLoader) {
+        self.loader = loader
+    }
 }
